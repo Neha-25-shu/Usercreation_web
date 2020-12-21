@@ -1,0 +1,18 @@
+<!-- <h1>Built-In Login Logout</h1> -->
+<h2>Login</h2>
+<form method="post">
+    {% csrf_token %}
+        {% if form.non_field_errors %}
+            {% for error in form.non_field_errors %}
+               <p class="er">{{error}}</p> 
+            {% endfor %}
+        {% endif %}
+        {% for fm in form %}
+        {{fm.label_tag}} {{fm}} {{fm.errors|striptags}} <br><br>
+        {% endfor %}
+    <button type="submit">Login</button>
+</form>
+
+
+<!------ Include the above in your HEAD tag ---------->
+
