@@ -76,7 +76,7 @@ Django packages provides a set of module  for user Registration Authentication a
 
 ## APIs Details
 
-    See documentation [here.](./API.md)
+   See documentation [here.](./API.md)
   
   
 ## Run the project Locally ##
